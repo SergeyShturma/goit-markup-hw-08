@@ -1,6 +1,10 @@
 .features {
   padding-top: 60px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 
   &__list {
     display: block;
@@ -65,7 +69,6 @@
 
     @media screen and (min-width: 768px) {
       max-width: 354px;
-      // margin-bottom: auto;
     }
   }
 }

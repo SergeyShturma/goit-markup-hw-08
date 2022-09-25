@@ -1,45 +1,74 @@
 .team {
   background-color: var(--secondary-bgc-dark);
 
+  @media screen and (max-width: 767px) {
+    &__images:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__images {
+    background-color: var(--secondary-bgc);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+
   &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     margin-bottom: 50px;
     text-align: center;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+    }
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    column-gap: var(--column-gap);
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
-}
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
 
-.team__images {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  width: 270px;
-}
+  &__subtitle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--primary-bgc);
+  }
 
-.team__subtitle {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: var(--primary-bgc);
-}
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
 
-.team__position {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 16px;
-  color: var(--secondary-text-color);
+  &__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    color: var(--secondary-text-color);
+  }
 }
