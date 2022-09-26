@@ -3,7 +3,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    padding-bottom: 94px;
+    padding-bottom: var(--section-padding-bottom);
 
     &__list {
       display: flex;
