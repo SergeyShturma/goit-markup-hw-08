@@ -549,12 +549,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .hover:hover,
-.hover:focus {
-    color: var(--accent-color);
-  }
-}
-@media screen and (min-width: 768px) {
   .open-mob-menu-btn {
     display: none;
   }
@@ -584,6 +578,11 @@ body {
     margin-right: 8px;
   }
 }
+.hover:hover,
+.hover:focus {
+  color: var(--accent-color);
+}
+
 @media screen and (min-width: 1200px) {
   .menu {
     margin-left: 93px;
@@ -1033,7 +1032,6 @@ body {
 .portfolio__link:hover .portfolio__overlay, .portfolio__link:focus .portfolio__overlay {
   transform: translateY(0);
 }
-
 .portfolio__examples {
   display: block;
 }
@@ -1044,7 +1042,6 @@ body {
     gap: 30px;
   }
 }
-
 .portfolio__item {
   background-color: var(--primary-bgc);
 }
@@ -1059,27 +1056,31 @@ body {
     width: calc((100% - 60px) / 3);
   }
 }
-
-@media screen and (max-width: 767px) {
-  .portfolio__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 .portfolio__subtitle {
   padding: 20px 24px;
+  flex-grow: 1;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-
+@media screen and (min-width: 768px) {
+  .portfolio__subtitle {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__subtitle {
+    width: 370px;
+  }
+}
 .portfolio__wrapper {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 294px;
 }
-
 .portfolio__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--transition-duration-and-timing-function);
 }
 .portfolio__link:hover, .portfolio__link:focus {
@@ -1087,6 +1088,11 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1166,9 +1172,19 @@ body {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 450px) {
+  .footer__input {
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 450px) and (max-width: 1199px) {
   .footer__input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    width: 358px;
   }
 }
 .footer__btn {

@@ -89,11 +89,6 @@
     align-items: center;
   }
 
-  .hover:hover,
-  .hover:focus {
-    color: var(--accent-color);
-  }
-
   .open-mob-menu-btn {
     display: none;
   }
@@ -128,6 +123,11 @@
       margin-right: 8px;
     }
   }
+}
+
+.hover:hover,
+.hover:focus {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 1200px) {
