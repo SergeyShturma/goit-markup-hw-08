@@ -14,6 +14,7 @@
     letter-spacing: 0.03em;
     min-width: 73px;
     padding: 6px 22px;
+    border-radius: 4px;
     color: var(--primary-text-color);
     background-color: var(--secondary-bgc-dark);
     transition: background-color var(--transition-duration-and-timing-function),
@@ -71,7 +72,7 @@
     font-size: 18px;
     line-height: 1.56;
     width: 100%;
-    height: 100%;
+    height: 101%;
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--primary-bgc);

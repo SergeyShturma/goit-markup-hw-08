@@ -28,6 +28,7 @@
     margin-bottom: 30px;
     width: 450px;
     height: 120px;
+    border-radius: 4px;
 
     background-color: var(--secondary-bgc-dark);
 
@@ -70,6 +71,20 @@
 
     @media screen and (min-width: 768px) {
       max-width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__text_margin {
+      margin-bottom: 0;
+    }
+
+    &__text_margin-tab {
+      margin-bottom: 0;
     }
   }
 }

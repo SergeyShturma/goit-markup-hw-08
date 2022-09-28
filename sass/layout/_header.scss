@@ -26,8 +26,8 @@
 }
 
 .page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 
   &__container {
@@ -78,7 +78,7 @@
         background-color: var(--accent-color);
 
         @media screen and (min-width: 1200px) {
-          bottom: 4px;
+          bottom: 1px;
         }
       }
     }
@@ -121,6 +121,7 @@
 
     &__icon {
       margin-right: 8px;
+      fill: currentColor;
     }
   }
 }
@@ -131,6 +132,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   .menu {
     margin-left: 93px;
   }
