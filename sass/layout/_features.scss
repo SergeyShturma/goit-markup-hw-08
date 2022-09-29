@@ -46,6 +46,12 @@
 
   &__item {
     flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__title {
@@ -66,7 +72,6 @@
   &__text {
     max-width: 450px;
     line-height: 1.71;
-    margin-bottom: 30px;
     color: var(--secondary-text-color);
 
     @media screen and (min-width: 768px) {
@@ -74,16 +79,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    &__text_margin {
-      margin-bottom: 0;
-    }
-
-    &__text_margin-tab {
       margin-bottom: 0;
     }
   }

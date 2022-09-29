@@ -198,6 +198,9 @@ body {
   padding-right: 10px;
   margin-right: 10px;
 }
+.mobile-menu__social-list-item {
+  padding-bottom: 5px;
+}
 
 .logo {
   font-family: var(--secondary-font);
@@ -756,6 +759,11 @@ body {
 .features__item {
   flex-basis: calc((100% - 90px) / 4);
 }
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .features__title {
   font-size: 14px;
   font-weight: 700;
@@ -774,7 +782,6 @@ body {
 .features__text {
   max-width: 450px;
   line-height: 1.71;
-  margin-bottom: 30px;
   color: var(--secondary-text-color);
 }
 @media screen and (min-width: 768px) {
@@ -784,14 +791,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .features__text {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features__text_margin {
-    margin-bottom: 0;
-  }
-  .features__text_margin-tab {
     margin-bottom: 0;
   }
 }
